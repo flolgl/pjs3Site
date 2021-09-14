@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Header from './components/Header';
+import ButtonGroup from "./components/ButtonGroup.js"
 
 function App() {
   return (
@@ -21,6 +22,11 @@ function App() {
           Learn React
         </a>
       </header>
+      <div className="contenantFlex centerFlex">
+
+        <ButtonGroup buttons={["Button 1", "Button 2", "Button 3", "Button 4"]}></ButtonGroup>
+        <ButtonGroup buttons={["Button 1", "Button 2", "Button 3", "Button 4"]}></ButtonGroup>
+      </div>
     </div>
   );
 }
