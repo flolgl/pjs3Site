@@ -1,0 +1,12 @@
+.contenantFlex{
+    display: flex;
+}
+
+.verticalButtonGroup{
+    flex-direction: column;
+}
+
+
+.custom-btn{
+    margin: 5px;
+}
