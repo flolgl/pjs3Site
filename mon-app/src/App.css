@@ -45,3 +45,7 @@
 .centerFlex{
   justify-content: center;
 }
+
+.flewWrap{
+  flex-wrap: wrap;
+}
