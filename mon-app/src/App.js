@@ -3,6 +3,7 @@ import './App.css';
 import Header from './components/Header';
 import ButtonGroup from "./components/ButtonGroup.js"
 import Card from "./components/Card.js"
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -47,7 +48,31 @@ function App() {
           img="https://www.iledebrehat.fr/wp-content/uploads/2021/01/compostage-768x512.jpg"
         ></Card>
         </div>
+        <Footer
+        title = "COMPANY NAME"
+        discription = "About the company, little discription will goes here.."
+        quickLinks ="Quick Links"
+        link1 = "https" titleLink1 = "Get Started"
+        link2 = "https" titleLink2 = "Top Leaders"
+        link3 = "https" titleLink3 = "Success Stories"
+        link4 = "https" titleLink4 = "Event/Tickets"
+        link5 = "https" titleLink5 = "News"
+        link6 = "https" titleLink6 = "Lifestyle"
+        link7 = "https" titleLink7 = "About"
+
+        title2 ="Get Started"
+        discription2 = "Get access to your full Training and Marketing Suite."
+        subscipeLink = "www"
+        subscipeBtn = "Subscipe NOW"
+
+        ContactUs = "Contact US"
+        ourMailLink = "syfsa@syfsa"
+        ourMail = "syfsa@syfsa"
+
+        
+        ></Footer>
     </div>
+    
   );
 }
 
