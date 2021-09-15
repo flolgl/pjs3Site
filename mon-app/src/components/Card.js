@@ -5,39 +5,29 @@ import React from "react";
 export default class Card extends React.Component{
     render(){
         return (
-            <div className="cardContainer">
-            <div className="post">
-                <div className="header_post">
-                    <img src={this.props.img} alt=""/>
+
+
+            <div className="presentationCard">
+                <div className="cardHeader">
+                    <img src={this.props.img} alt="" />
                 </div>
-        
-                <div className="body_post">
-                    <div className="post_content">
-        
-                        <h1>{this.props.title}</h1>
-                        <p>{this.props.text}</p>
-        
-                        <div className="cardContainer_infos">
-                            <div className="postedBy">
-                                <span>Autheur</span>
-                                {this.props.author}
-                            </div>
-        
-                            <div className="cardContainer_tags">
-                                <span>tags</span>
-                                <div className="tags">
-                                    <ul>
-                                        <li>{this.props.tags[0]}</li>
-                                        <li>{this.props.tags[1]}</li>
-                                    </ul>
-                                </div>
-        
-                            </div>
+                <div className="presentationCardBody">
+                    <span className="tag tag-teal">{this.props.tag}</span>
+                    <h4>{this.props.title}</h4>
+                    <p>{this.props.text}</p>
+                
+                    <div className="user">
+                        <img src="https://yt3.ggpht.com/a/AGF-l7-0J1G0Ue0mcZMw-99kMeVuBmRxiPjyvIYONg=s900-c-k-c0xffffffff-no-rj-mo" alt="user" />
+                        <div className="user-info">
+                            <h5>{this.props.author}</h5>
+                            <small>2h ago</small>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+
+
+           
         )
     }
 }
