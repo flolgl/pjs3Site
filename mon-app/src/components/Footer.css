@@ -1,0 +1,79 @@
+/* Conteneur dans le footer */
+.footer-container{
+    background-color: rgb(39, 39, 39);
+    padding: 2rem 4rem 2rem 4rem !important;
+    margin-top: 9rem;
+}
+
+/* Petite ligne grise dans le footer */
+.footer-container::before {
+    background-color:rgb(62, 66, 68);;
+    content: '';
+    display: block;
+    height: 1px;
+    margin: 0 auto 0.5rem;
+    position: relative;
+    width: 70px;
+}
+
+/* Transition icones réseaux sociaux */
+.footer-icon{
+    transition: fill 0.3s ease;
+}
+
+/* Transition icones réseaux sociaux en couleur blanche quand hover */
+.footer-link:hover .footer-icon{
+    fill:#fff;
+    transition: 0.3s ease;
+}
+
+.linksContainer{
+    display: flex;
+    justify-content: space-between;
+    color:#fff;
+}
+
+.paddingContainer{
+    padding-right:100px;
+    padding-left:100px;
+}
+
+.fWrap{
+    flex-wrap: wrap;
+}
+
+.footerLink{
+    transition: color 0.3s ease;
+    color:#797a7a !important;
+    text-decoration: none;
+    padding: .5rem 1rem;
+}
+
+.footerLink:hover{
+    color:#fff !important;
+    transition: 0.3s ease !important;
+}
+
+.paysage{
+    background-image:url("https://www.iledebrehat.fr/wp-content/uploads/2021/01/mairie-1-2.jpg");
+    min-height: 430px;
+}
+
+.containerBottom{
+    background-color: rgb(39, 39, 39);
+    padding: 2rem 4rem 0 4rem !important;
+    margin-top: 0 !important;
+}
+
+.dFlexCenter{
+    display:flex;
+    justify-content: center;
+}
+
+.leftFooterText{
+    max-width: 400px;
+}
+
+/* .leftLine{
+
+} */
