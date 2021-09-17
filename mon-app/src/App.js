@@ -3,6 +3,7 @@ import './App.css';
 import Header from './components/Header';
 import ButtonGroup from "./components/ButtonGroup.js"
 import Card from "./components/Card.js"
+import Footer from "./components/Footer.js"
 
 function App() {
   return (
@@ -46,7 +47,9 @@ function App() {
           tag="Voyage"
           img="https://www.iledebrehat.fr/wp-content/uploads/2021/01/compostage-768x512.jpg"
         ></Card>
-        </div>
+      </div>
+      <Footer></Footer>
+
     </div>
   );
 }
