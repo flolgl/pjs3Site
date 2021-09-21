@@ -4,33 +4,35 @@ import Header from './components/Header';
 import ButtonGroup from "./components/ButtonGroup.js"
 import Card from "./components/Card.js"
 import Footer from "./components/Footer.js"
+import Btn_sty from "./components/Btn_sty"
+
 
 function App() {
   return (
     <div className="App">
     <Header/>
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <p>Du texte</p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
       <div className="contenantFlex centerFlex flewWrap">
 
-        <ButtonGroup buttons={["Button 1", "Button 2", "Button 3", "Button 4"]}></ButtonGroup>
-        <ButtonGroup buttons={["Button 1", "Button 2", "Button 3", "Button 4"]}></ButtonGroup>
-        <ButtonGroup buttons={["Button 1", "Button 2", "Button 3", "Button 4"]}></ButtonGroup>
+            <ButtonGroup buttons={["Button 1", "Button 2", "Button 3", "Button 4"]}></ButtonGroup>
+            <ButtonGroup buttons={["Button 1", "Button 2", "Button 3", "Button 4"]}></ButtonGroup>
       </div>
+      </header>
+      <div className="btn_group">
+          <Btn_sty text="Office de tourisme" icon="i"></Btn_sty>
+          <Btn_sty text="Camping municipal" icon="camping"></Btn_sty>
+          <Btn_sty text="Horaires vedettes" icon="bateau"></Btn_sty>
+          <Btn_sty text="Ports et mouillages" icon="port"></Btn_sty>
+          <Btn_sty text="Numéros utiles" icon="phone"></Btn_sty>
+          <Btn_sty text="Activités culturelles" icon="theatre"></Btn_sty>
+          <Btn_sty text="Activités sportives" icon="foot"></Btn_sty>
+          <Btn_sty text="Patrimoine" icon="eglise"></Btn_sty>
+          <Btn_sty text="Histoire" icon="livre"></Btn_sty>
+      </div>
+      
 
+      <Footer></Footer>
+    
       <div className="contenantFlex centerFlex flewWrap">
 
         <Card 
