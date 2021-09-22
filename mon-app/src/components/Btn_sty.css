@@ -39,11 +39,11 @@
     transition: all 0.1s linear;
     color: #fff;
   }
-  .body:hover svg {
+  .body:hover .svg_ {
     transition: all 0.1s linear;
     color: #fff !important;
   }
-  svg{
+  .svg_{
     width: 100%;
     height: 85px;
   }

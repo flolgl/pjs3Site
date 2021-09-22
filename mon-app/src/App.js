@@ -5,7 +5,7 @@ import ButtonGroup from "./components/ButtonGroup.js"
 import Card from "./components/Card.js"
 import Footer from "./components/Footer.js"
 import Btn_sty from "./components/Btn_sty"
-
+import CarouselComponent from "./components/CarouselCompo.js"
 
 function App() {
   return (
@@ -31,7 +31,6 @@ function App() {
       </div>
       
 
-      <Footer></Footer>
     
       <div className="contenantFlex centerFlex flewWrap">
 
@@ -49,6 +48,11 @@ function App() {
           tag="Voyage"
           img="https://www.iledebrehat.fr/wp-content/uploads/2021/01/compostage-768x512.jpg"
         ></Card>
+      </div>
+      <div>
+        <CarouselComponent title="testtesttest">
+          
+        </CarouselComponent>
       </div>
       <Footer></Footer>
 

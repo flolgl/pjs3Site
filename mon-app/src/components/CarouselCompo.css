@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.rectangleContainer{
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    width: 320px;
+    display: flex;
+}
+
+.containerCarteCarou{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding:10px;
+
+}
+
+.redBarre{
+    background-color: #c8092f;
+    width: 15px;
+}
+
+.title{
+    background-color: #c8092f;
+    color:white;
+    text-decoration: none !important;
+    letter-spacing: 0.1em;
+    font-size: 12px;
+
+    padding: 0.25rem;
+    border-radius: 0.25rem;
+    margin-right: .25rem;
+    margin-bottom: .25rem;
+    line-height: 1.2;
+
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    cursor:pointer;
+}
+
+.title:hover{
+    color:#fff;
+}
+
+
+.textMargin{
+    text-decoration: none;
+    color:black;
+    margin: 10px;
+}
+
+.sommaireText:hover{
+    color: #c8092f !important;
+    cursor: pointer;
+}
+
+.majText{
+    font-size: 12px;
+    color:#777;
+    text-align: start;
+}
+
+.infoButton{
+    text-decoration: none;
+    cursor: pointer;
+    color:#c8092f;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #c8092f;
+    padding:4px 8px;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.infoButton:hover{
+    background-color: #c8092f;
+    color:#fff;
+    transition: all .2s ease-out;
+}
