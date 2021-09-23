@@ -3,34 +3,35 @@ import './App.css';
 import Header from './components/Header';
 import ButtonGroup from "./components/ButtonGroup.js"
 import Card from "./components/Card.js"
-import Footer from './components/Footer';
+import Footer from "./components/Footer.js"
+import Btn_sty from "./components/Btn_sty"
+import CarouselComponent from "./components/CarouselCompo.js"
 
 function App() {
   return (
     <div className="App">
     <Header/>
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <p>Du texte</p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
       <div className="contenantFlex centerFlex flewWrap">
 
-        <ButtonGroup buttons={["Button 1", "Button 2", "Button 3", "Button 4"]}></ButtonGroup>
-        <ButtonGroup buttons={["Button 1", "Button 2", "Button 3", "Button 4"]}></ButtonGroup>
-        <ButtonGroup buttons={["Button 1", "Button 2", "Button 3", "Button 4"]}></ButtonGroup>
+            <ButtonGroup buttons={["Button 1", "Button 2", "Button 3", "Button 4"]}></ButtonGroup>
+            <ButtonGroup buttons={["Button 1", "Button 2", "Button 3", "Button 4"]}></ButtonGroup>
       </div>
+      </header>
+      <div className="btn_group">
+          <Btn_sty text="Office de tourisme" icon="i"></Btn_sty>
+          <Btn_sty text="Camping municipal" icon="camping"></Btn_sty>
+          <Btn_sty text="Horaires vedettes" icon="bateau"></Btn_sty>
+          <Btn_sty text="Ports et mouillages" icon="port"></Btn_sty>
+          <Btn_sty text="Numéros utiles" icon="phone"></Btn_sty>
+          <Btn_sty text="Activités culturelles" icon="theatre"></Btn_sty>
+          <Btn_sty text="Activités sportives" icon="foot"></Btn_sty>
+          <Btn_sty text="Patrimoine" icon="eglise"></Btn_sty>
+          <Btn_sty text="Histoire" icon="livre"></Btn_sty>
+      </div>
+      
 
+    
       <div className="contenantFlex centerFlex flewWrap">
 
         <Card 
@@ -47,30 +48,19 @@ function App() {
           tag="Voyage"
           img="https://www.iledebrehat.fr/wp-content/uploads/2021/01/compostage-768x512.jpg"
         ></Card>
-        </div>
-        <Footer
-        title = "COMPANY NAME"
-        discription = "About the company, little discription will goes here.."
-        quickLinks ="Quick Links"
-        link1 = "https" titleLink1 = "Get Started"
-        link2 = "https" titleLink2 = "Top Leaders"
-        link3 = "https" titleLink3 = "Success Stories"
-        link4 = "https" titleLink4 = "Event/Tickets"
-        link5 = "https" titleLink5 = "News"
-        link6 = "https" titleLink6 = "Lifestyle"
-        link7 = "https" titleLink7 = "About"
+      </div>
+      <div>
+        <CarouselComponent
+         title="testtesttest"
+         text = "here is the text"
+         dateMiseAJour = "23/09/2021"
+         hrefPlusInfo = "https://google.com"
+         >
+          
+        </CarouselComponent>
+      </div>
+      <Footer></Footer>
 
-        title2 ="Get Started"
-        discription2 = "Get access to your full Training and Marketing Suite."
-        subscipeLink = "www"
-        subscipeBtn = "Subscipe NOW"
-
-        ContactUs = "Contact US"
-        ourMailLink = "syfsa@syfsa"
-        ourMail = "syfsa@syfsa"
-
-        
-        ></Footer>
     </div>
     
   );
