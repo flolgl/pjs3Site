@@ -50,7 +50,12 @@ function App() {
         ></Card>
       </div>
       <div>
-        <CarouselComponent title="testtesttest">
+        <CarouselComponent
+         title="testtesttest"
+         text = "here is the text"
+         dateMiseAJour = "23/09/2021"
+         hrefPlusInfo = "https://google.com"
+         >
           
         </CarouselComponent>
       </div>
