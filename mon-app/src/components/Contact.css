@@ -1,0 +1,179 @@
+/*Margin pour conteneur contact*/
+.contact-section {
+    margin: 3em 3em 1.5rem 3em !important;
+}
+
+/*Conteneur de l'input*/
+.md-form {
+    position: relative;
+    padding: 15px 0 0;
+    margin-top: 10px;
+}
+
+/*L'input*/
+.form-field{
+    border:0 !important;
+    border-radius: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    transition: border-color 0.2s;
+}
+
+.form-field-grey{
+    border-bottom: 2px solid rgba(0,0,0,.55) !important;
+
+}
+
+.form-field-red{
+    border-bottom: 2px solid rgba(202, 18, 12, 0.55) !important;
+
+}
+
+/*L'input quand il est clické */
+.form-field:focus{
+    box-shadow: none !important;
+    border-color: #272727 !important;
+}
+
+/*Le label de l'input*/
+.form-label{
+	position: absolute;
+	top: 0;
+	display: block;
+	transition: 0.2s;
+	font-size: 0.8rem;
+	color: #272727;
+	font-weight: 300;
+    
+
+}
+
+/* Transition de l'input*/
+.form-field:focus ~ .form-label{
+	position: absolute !important;
+	top: 0 !important;
+	display: block !important;
+	transition: 0.2s !important;
+	font-size: 0.8rem !important;
+	color: #272727 !important;
+	font-weight: 300 !important;
+}
+
+/*Faire disparaitre l'input*/
+.form-field::placeholder{
+    color: transparent !important;
+}
+
+/*Récupérer l'event de si du texte est écrit dans l'input*/
+.form-field:placeholder-shown ~ .form-label {
+    position: absolute;
+    top: 20px;
+    cursor: text;
+    transition: 0.2s;
+    color:#333232;
+    font-weight: 300;
+    font-size: 1rem;
+
+}
+/* Enlever css bootstrap*/
+.form-label:required, .form-label:invalid {
+    box-shadow: none !important;
+}
+
+/* Espace */
+.contact-form{
+    margin-bottom: 3rem;
+}
+/* Animation bouton */
+@-webkit-keyframes short-press {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes short-press {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+.hide {
+    display: none;
+}
+
+/* Bouton */
+.submit-button {
+    display: block;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: .75em;
+    letter-spacing: 1px;
+    height: 38px;
+    width: 120px;
+    line-height: 38px;
+    overflow: hidden;
+    background: rgba(0,0,0,.55);
+    border-radius: 3px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    border: 0;
+    cursor: pointer;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+/* Changement Bouton quand focus et hover */
+.submit-button:hover, .submit-button:focus {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    outline: none;
+}
+
+/* Changement couleur Bouton quand hover */
+.submit-button:hover{
+    background-color: #272727;
+}
+
+/* Animation bouton */
+.submit-button.animated {
+    -webkit-animation: 0.75s short-press cubic-bezier(0.77, 0, 0.175, 1) forwards;
+    animation: 0.75s short-press cubic-bezier(0.77, 0, 0.175, 1) forwards;
+}
+
+.submit-button > span {
+    display: block;
+    color: #fff;
+    text-align: center;
+}
+
+.submit-button > span.pre-state-msg {
+    -webkit-transition: all 0.7s cubic-bezier(0.77, 0, 0.175, 1);
+    transition: all 0.7s cubic-bezier(0.77, 0, 0.175, 1);
+    -webkit-transition-delay: .75s;
+    transition-delay: .75s;
+}
+
+.submit-button.state-1 .pre-state-msg {
+    margin-top: -38px;
+}
+
+.submit-button.state-2 .pre-state-msg {
+    margin-top: -76px;
+}
+  
+
+
