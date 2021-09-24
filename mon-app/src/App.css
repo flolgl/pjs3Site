@@ -63,3 +63,7 @@
 .flewWrap{
   flex-wrap: wrap;
 }
+
+.mgCaro{
+  margin:15px;
+}

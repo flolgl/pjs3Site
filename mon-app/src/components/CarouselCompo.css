@@ -1,23 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 .rectangleContainer{
-    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 20px rgba(0,0,0,0.4);
     background-color: #fff;
     width: 320px;
     display: flex;
+    border-right: 1rem solid;
+    border-color:#c8092f;
 }
 
 .containerCarteCarou{
-    display:flex;
+    display:flex;   
     flex-direction: column;
     flex-wrap: wrap;
     padding:10px;
-
-}
-
-.redBarre{
-    background-color: #c8092f;
-    width: 15px;
 }
 
 .title{

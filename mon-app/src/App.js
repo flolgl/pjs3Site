@@ -7,6 +7,7 @@ import Footer from "./components/Footer.js"
 import Btn_sty from "./components/Btn_sty"
 import CarouselComponent from "./components/CarouselCompo.js"
 
+
 function App() {
   return (
     <div className="App">
@@ -49,14 +50,33 @@ function App() {
           img="https://www.iledebrehat.fr/wp-content/uploads/2021/01/compostage-768x512.jpg"
         ></Card>
       </div>
-      <div>
-        <CarouselComponent title="testtesttest">
+      <div class = "contenantFlex centerFlex flewWrap mgCaro">
+        <CarouselComponent
+         title="testtesttest"
+         text = "here is the text"
+         dateMiseAJour = "23/09/2021"
+         hrefPlusInfo = "https://google.com"
+         >
           
         </CarouselComponent>
+        <CarouselComponent
+        title = "Essai 2"
+        text = "deuxième test"
+        dateMiseAJour = "24/09/2021"
+        hrefPlusInfo = "#rien"
+        ></CarouselComponent>
+      </div>      
+      <div className="contenantFlex centerFlex flewWrap">
+
+        <ButtonGroup buttons={["Button 1", "Button 2", "Button 3", "Button 4"]}></ButtonGroup>
+        <ButtonGroup buttons={["Button 1", "Button 2", "Button 3", "Button 4"]}></ButtonGroup>
       </div>
+
+     
       <Footer></Footer>
 
     </div>
+    
   );
 }
 
