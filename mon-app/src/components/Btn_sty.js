@@ -279,13 +279,7 @@ style={{ color: "#c8092f", padding: "10%", paddingBottom: "0%" }}>
       return 9;
     }
 
-    function headset(props) {
-      if (props.Component == "headset") {
-        return icons[1];
-      } else {
-        return <div>#IconNotFound</div>;
-      }
-    }
+
     return (
       <div className="wrap">
           <div className="body">
@@ -294,7 +288,7 @@ style={{ color: "#c8092f", padding: "10%", paddingBottom: "0%" }}>
             {icons[icon(this.props)]}
             <i class="fas fa-camera fa-sm"></i>
           </div>
-          <div className="text">{this.props.text}</div>
+          <div className="text" style={{textDecoration:'underline'}}>{this.props.text}</div>
         </a>
       </div>
 
