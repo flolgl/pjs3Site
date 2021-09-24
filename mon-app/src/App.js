@@ -65,7 +65,13 @@ function App() {
         dateMiseAJour = "24/09/2021"
         hrefPlusInfo = "#rien"
         ></CarouselComponent>
+      </div>      
+      <div className="contenantFlex centerFlex flewWrap">
+
+        <ButtonGroup buttons={["Button 1", "Button 2", "Button 3", "Button 4"]}></ButtonGroup>
+        <ButtonGroup buttons={["Button 1", "Button 2", "Button 3", "Button 4"]}></ButtonGroup>
       </div>
+
      
       <Footer></Footer>
 
