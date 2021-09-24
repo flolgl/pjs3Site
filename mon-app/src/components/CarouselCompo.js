@@ -15,10 +15,7 @@ export default class CarouselComponent extends React.Component{
                     <div className="textMargin">
                         <a className="infoButton" href={this.props.hrefPlusInfo}>+ d'info</a>
                     </div>
-
                 </div>
-                
-
             </div>
         )
     }
