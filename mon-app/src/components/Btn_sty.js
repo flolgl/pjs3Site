@@ -289,7 +289,7 @@ style={{ color: "#c8092f", padding: "10%", paddingBottom: "0%" }}>
     return (
       <div className="wrap">
           <div className="body">
-        <a className="corps" href="#rien">
+        <a className="corps" href={this.props.href}>
           <div className="img">
             {icons[icon(this.props)]}
             <i class="fas fa-camera fa-sm"></i>
