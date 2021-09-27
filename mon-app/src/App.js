@@ -9,6 +9,7 @@ import CarouselComponent from "./components/CarouselCompo.js"
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom"
 import Contact from "./components/Contact.js"
 import Create from "./Create.js"
+import PageTPL from "./components/PageTPL.js"
 
 
 function App() {
@@ -27,6 +28,13 @@ function App() {
 
         <Route path="/create">
           <Create/>
+        </Route>
+        <Route path="/activities">
+          <PageTPL 
+            title="Activités et découverte"
+            resume="Partez à la découverte de l’île et de son patrimoine, profitez des activités culturelles et sportives."
+            buttons={[["Activités culturelles", "theatre"], ["Activités sportives", "foot"], ["L'agenda", "agenda"], ["Camping municipal", "camping"], ["Office de tourisme", "i"], ["Histoire", "livre"], ["Patrimoine", "eglise"], ["Démographie", "graph"]]}
+          ></PageTPL>
         </Route>
       </Switch>
       <Footer/>
