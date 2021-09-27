@@ -1,6 +1,16 @@
 .wrap{
   padding:10px;
 }
+
+.corps{
+  text-decoration: none !important;
+  cursor: pointer;
+}
+
+.text {
+  text-decoration: none !important;
+}
+
 .body{
   
     display: inline-block;
