@@ -1,14 +1,8 @@
-import logo from './logo.svg';
 import './App.css';
 import Header from './components/Header';
-import ButtonGroup from "./components/ButtonGroup.js"
-import Card from "./components/Card.js"
 import Footer from "./components/Footer.js"
-import Btn_sty from "./components/Btn_sty"
-import CarouselComponent from "./components/CarouselCompo.js"
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom"
 import Contact from "./components/Contact.js"
-import Create from "./Create.js"
 import PageTPL from "./components/PageTPL.js"
 
 
@@ -24,10 +18,6 @@ function App() {
 
         <Route path="/contact">
           <Contact/>
-        </Route>
-
-        <Route path="/create">
-          <Create/>
         </Route>
         <Route path="/activities">
           <PageTPL 
