@@ -14,10 +14,10 @@ export default class Header extends React.Component{
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav" className="navBarLinksContainer">
                     <Nav className="">
-                        <Nav.Link href="#home">Accueil</Nav.Link>
-                        <Nav.Link href="#municipalite">Municipalité</Nav.Link>
-                        <Nav.Link href="#services">Services municipaux</Nav.Link>
-                        <Nav.Link href="#activites">Activités et Découverte</Nav.Link>
+                        <Nav.Link href="/">Accueil</Nav.Link>
+                        <Nav.Link href="/municipalite">Municipalité</Nav.Link>
+                        <Nav.Link href="/serMunicipaux">Services municipaux</Nav.Link>
+                        <Nav.Link href="/activities">Activités et Découverte</Nav.Link>
                         <Nav.Link href="#contact">Contact</Nav.Link>
                         <Nav.Link href="#facebook">Facebook</Nav.Link>
                     </Nav>

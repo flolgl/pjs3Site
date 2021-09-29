@@ -29,6 +29,20 @@ function App() {
         <Route path="/create">
           <Create/>
         </Route>
+        <Route path="/municipalite">
+          <PageTPL 
+            title="Municipalité"
+            resume="Tout savoir sur la vie de l’administration bréhatine : les élus, la mairie, les projets, les commissions, le budget sans oublier les formalités administratives.."
+          buttons={[["L'équipe municipale", "equipe"], ["La mairie", "mairie"], ["Les commissions", "docs"], ["Conseil municipaix", "cerveaux"], ["Tarif communaux", "stylo"], ["Jumelage itterswiller", "handshake"], ["conseil municipal des jeunes", "stickman"], ["Budget et fiscalité", "euros"]]}
+          ></PageTPL>
+        </Route>
+        <Route path="/serMunicipaux">
+          <PageTPL 
+            title="Services municipaux"
+            resume="Tous les services municipaux."
+          buttons={[["Formalités administratives", "docs"], ["Gestion des poubelles", "poubelle"], ["Services techniques", "engrenage"], ["Services de santé", "croix"], ["Ecole-cantine-garderie", "stylo"], ["Pompier", "ext"], ["Brehat infos", "lire"], ["Enquêtes publiques", "loupe"], ["Port et mouillages", "port"], ["Location de salle", "camping"],["Assainissement et gestion de l’eau","goute"]]}
+          ></PageTPL>
+        </Route>
         <Route path="/activities">
           <PageTPL 
             title="Activités et découverte"

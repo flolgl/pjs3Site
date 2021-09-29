@@ -17,7 +17,7 @@
     width: 20%;
     min-width: 190px;
     max-width: 200px;
-    max-height: 300px;
+    max-height: 200px;
     background-color: #fff;
     border: 0px;
     border-top: 10px;
@@ -27,7 +27,6 @@
   }
   
   .text {
-    padding: 10%;
     padding-bottom: 3%;
     font-style: normal;
     font-weight: 600;
@@ -41,6 +40,7 @@
   
  .img {
     height: 100px;
+    
   }
 .body:hover {
     transition: all 0.1s linear;
@@ -55,7 +55,9 @@
     color: #fff !important;
   }
   .svg_{
-    width: 100%;
+
+    justify-content: center;
+    
     height: 85px;
   }
   
