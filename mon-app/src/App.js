@@ -26,7 +26,6 @@ function App() {
         <Route path="/contact">
           <Contact/>
         </Route>
-<<<<<<< HEAD
 
         <Route path="/create">
           <Create/>
@@ -45,8 +44,6 @@ function App() {
           buttons={[["Formalités administratives", "docs"], ["Gestion des poubelles", "poubelle"], ["Services techniques", "engrenage"], ["Services de santé", "croix"], ["Ecole-cantine-garderie", "stylo"], ["Pompier", "ext"], ["Brehat infos", "lire"], ["Enquêtes publiques", "loupe"], ["Port et mouillages", "port"], ["Location de salle", "camping"],["Assainissement et gestion de l’eau","goute"]]}
           ></PageTPL>
         </Route>
-=======
->>>>>>> 8a1d4fff165c426e4271be6ea24b1a7f798f680d
         <Route path="/activities">
           <PageTPL 
             title="Activités et découverte"
