@@ -1,6 +1,6 @@
 .custom-btn {
-  width: 130px;
-  height: 40px;
+  width: 230px;
+  height: 83px;
   padding: 10px 25px;
   border: 2px solid #000;
   font-family: 'Lato', sans-serif;
@@ -23,6 +23,9 @@
   display: block;
   width: 100%;
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .btn-6:before,
 .btn-6:after {
