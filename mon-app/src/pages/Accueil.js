@@ -3,6 +3,9 @@ import "./Accueil.css"
 import ButtonGroup from "../components/ButtonGroup.js";
 import CarouselComponent from "../components/CarouselCompo.js";
 import Card from "../components/Card.js"
+import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
+
 
 
 export default class Accueil extends React.Component{
@@ -10,15 +13,30 @@ export default class Accueil extends React.Component{
         return(
 
             <div className="bodyWrapper">
-                <div className="AccueilWrapper">
+
+                <div className="accueil">
+                    
                     <div className="buttonContainer">
                         <ButtonGroup buttons={["Vie quotidienne", "Nous contacter", "L'agenda"]}></ButtonGroup>
                         <ButtonGroup buttons={["Vos démarches", "Numéros utiles", "L'actualité"]}></ButtonGroup>
                     </div>
-                </div>
-                <div className="carousel">
+                    <Carousel autoPlay={true} infiniteLoop={true} showThumbs={false}>
+                        <div>
+                            <img alt="" src="https://www.iledebrehat.fr/wp-content/uploads/2020/10/brehat.jpg" />
+                            <p className="legend">Legend 1</p>
+                        </div>
+                        <div>
+                            <img alt="" src="https://www.iledebrehat.fr/wp-content/uploads/2020/10/brehat.jpg" />
+                            <p className="legend">Legend 2</p>
+                        </div>
+                        <div>
+                            <img alt="" src="https://www.iledebrehat.fr/wp-content/uploads/2020/10/brehat.jpg" />
+                            <p className="legend">Legend 3</p>
+                        </div>
+                    </Carousel>
 
                 </div>
+
                 <div className="ButtonsAbonnement"></div>
                 <div className="municipalBulWrapper">
                     <h3>Bréhat Infos – le bulletin municipal</h3>

@@ -10,7 +10,8 @@ import {BrowserRouter as Router, Route, Switch} from "react-router-dom"
 import Contact from "./components/Contact.js"
 import Create from "./Create.js"
 import PageTPL from "./components/PageTPL.js"
-
+import Accueil from "./pages/Accueil.js"
+import HP from './components/HP';
 
 
 function App() {
@@ -20,7 +21,7 @@ function App() {
       <Header/>
       <Switch>
         <Route path="/ddd">
-          <Footer/>
+          <HP/>
         </Route>
 
         <Route path="/contact">
@@ -50,6 +51,9 @@ function App() {
             resume="Partez à la découverte de l’île et de son patrimoine, profitez des activités culturelles et sportives."
             buttons={[["Activités culturelles", "theatre"], ["Activités sportives", "foot"], ["L'agenda", "agenda"], ["Camping municipal", "camping"], ["Office de tourisme", "i"], ["Histoire", "livre"], ["Patrimoine", "eglise"], ["Démographie", "graph"]]}
           ></PageTPL>
+        </Route>
+        <Route path="/">
+          <Accueil/>
         </Route>
       </Switch>
       <Footer/>
