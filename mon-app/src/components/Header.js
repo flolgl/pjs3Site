@@ -18,7 +18,7 @@ export default class Header extends React.Component{
                         <Nav.Link href="/municipalite">Municipalité</Nav.Link>
                         <Nav.Link href="/serMunicipaux">Services municipaux</Nav.Link>
                         <Nav.Link href="/activities">Activités et Découverte</Nav.Link>
-                        <Nav.Link href="#contact">Contact</Nav.Link>
+                        <Nav.Link href="/contact">Contact</Nav.Link>
                         <Nav.Link href="#facebook">Facebook</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
