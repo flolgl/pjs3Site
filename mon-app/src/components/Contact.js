@@ -6,17 +6,12 @@ export default class Contact extends React.Component{
             <><><link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' /><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" /></><section class="ftco-section">
                 <div class="container">
                     <div class="row justify-content-center">
-                        <div class="col-md-6 text-center mb-5">
-                            <h2 class="heading-section">Formulaire de contact</h2>
-                        </div>
-                    </div>
-                    <div class="row justify-content-center">
                         <div class="col-md-12">
                             <div class="wrapper">
                                 <div class="row no-gutters mb-5">
                                     <div class="col-md-7">
                                         <div class="contact-wrap w-100 p-md-5 p-4">
-                                            <h3 class="mb-4">Contacter Bous</h3>
+                                            <h3 class="mb-4">Contact us</h3>
                                             <div id="form-message-warning" class="mb-4"></div>
                                             <div id="form-message-success" class="mb-4">
                                                 Your message was sent, thank you!
@@ -57,8 +52,9 @@ export default class Contact extends React.Component{
                                             </form>
                                         </div>
                                     </div>
-                                    <div class="col-md-5 d-flex align-items-stretch">
+                                    <div className="col-md-5 d-flex align-items-stretch">
                                         <div id="map">
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d21002.745759944224!2d-3.012007058227539!3d48.85166522692693!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48120ffd48454b05%3A0x40ca5cd36e639e0!2zw45sZS1kZS1CcsOpaGF0!5e0!3m2!1sen!2sfr!4v1634893192826!5m2!1sen!2sfr" width="180%" height="100%"></iframe>
                                         </div>
                                     </div>
                                 </div>
@@ -109,7 +105,9 @@ export default class Contact extends React.Component{
 
                     </div>
                 </div>
-            </section></>
+            </section>
+            </>
+
         )
     }
 
