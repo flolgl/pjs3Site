@@ -20,7 +20,6 @@ function App() {
       <Header/>
       <Switch>
         <Route path="/ddd">
-         
         </Route>
 
         <Route path="/contact">
