@@ -5,6 +5,10 @@ import CarouselComponent from "../components/CarouselCompo.js";
 import Card from "../components/Card.js"
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import comp from './compost.jpg';
+import bla from './blason.png';
+import manage from './manage.jpg';
+import logoS from './logoscene.png';
 
 
 
@@ -20,18 +24,15 @@ export default class Accueil extends React.Component{
                         <ButtonGroup buttons={["Vie quotidienne", "Nous contacter", "L'agenda"]}></ButtonGroup>
                         <ButtonGroup buttons={["Vos démarches", "Numéros utiles", "L'actualité"]}></ButtonGroup>
                     </div>
-                    <Carousel autoPlay={true} infiniteLoop={true} showThumbs={false}>
-                        <div>
-                            <img alt="" src="https://www.iledebrehat.fr/wp-content/uploads/2020/10/brehat.jpg" />
-                            <p className="legend">Legend 1</p>
+                    <Carousel className='carrousel' autoPlay={true} infiniteLoop={true} showThumbs={false} showArrows={false}>
+                        <div style={{height:'100%'}}>
+                            <img style={{height:'100%', width:'auto'}} alt="" src="https://www.iledebrehat.fr/wp-content/uploads/2020/10/brehat.jpg" />
                         </div>
-                        <div>
-                            <img alt="" src="https://www.iledebrehat.fr/wp-content/uploads/2020/10/brehat.jpg" />
-                            <p className="legend">Legend 2</p>
+                        <div style={{height:'100%'}}>
+                            <img style={{height:'100%', width:'auto'}} alt="" src="https://www.iles-du-ponant.com/wp-content/uploads/brehat/brehat-YLG-14-2014-58-2000x850.jpg" />
                         </div>
-                        <div>
-                            <img alt="" src="https://www.iledebrehat.fr/wp-content/uploads/2020/10/brehat.jpg" />
-                            <p className="legend">Legend 3</p>
+                        <div style={{height:'100%'}}>
+                            <img style={{height:'100%', width:'auto'}} alt="" src="https://www.cotesdarmor.com/uploads/2020/10/Brehat_2020-06_ile-du-guerzido_oeil-de-paco.jpg" />
                         </div>
                     </Carousel>
 
@@ -40,22 +41,32 @@ export default class Accueil extends React.Component{
                 <div className="ButtonsAbonnement"></div>
                 <div className="municipalBulWrapper">
                     <h3>Bréhat Infos – le bulletin municipal</h3>
-                    <div className="cFlex">
-                        <CarouselComponent title="A LA UNE" text="Repas des aînés – dimanche 7 novembre 2021" dateMiseAJour="16/09/2021"></CarouselComponent>
+                    <div className="cFlex-Center">
+                       
                         <div className="cFlex">
                         <Card 
-                            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                            title="C'est un test"
-                            author="Flo"
-                            tag="Voyage"
-                            img="https://c0.wallpaperflare.com/preview/483/210/436/car-green-4x4-jeep.jpg"
+                            text="vous pouvez retirer votre composteur aux services techniques de la mairie lors des permanences suivantes : de 10h à 12h le 25 et 30 Octobre puis 3 novembre"
+                            title="Distribution des composteurs"
+                            author="La Mairie de bréhat"
+                            authorImg={bla}
+                            tag="A LA UNE"
+                            img={comp}
                         ></Card>
                         <Card 
-                            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                            title="C'est un test"
-                            author="Flo"
-                            tag="Voyage"
-                            img="https://c0.wallpaperflare.com/preview/483/210/436/car-green-4x4-jeep.jpg"
+                            text="Le samedi 2 octobre, une réunion publique d’informations générales sur les travaux en cours et projets de la commune vous a été présentée à la salle des fêtes"
+                            title="Réunion publique d’informations "
+                            author="La Mairie de bréhat"
+                            authorImg={bla}
+                            tag="A LA UNE"
+                            img={manage}
+                        ></Card>
+                        <Card 
+                            text="Ravie d’avoir permis la réalisation du premier festival Les Scènes de Bréhat, la mairie de Bréhat félicite l’organisation et les artistes pour la bonne tenue et la qualité du festival"
+                            title="Festival Les Scènes de Bréhat"
+                            author="La Mairie de bréhat"
+                            authorImg={bla}
+                            tag="A LA UNE"
+                            img={logoS}
                         ></Card>
 
                         </div>

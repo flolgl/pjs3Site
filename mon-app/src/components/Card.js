@@ -17,10 +17,10 @@ export default class Card extends React.Component{
                     <p>{this.props.text}</p>
                 
                     <div className="user">
-                        <img src="https://yt3.ggpht.com/a/AGF-l7-0J1G0Ue0mcZMw-99kMeVuBmRxiPjyvIYONg=s900-c-k-c0xffffffff-no-rj-mo" alt="user" />
+                        <img src={this.props.authorImg} alt="user" />
                         <div className="user-info">
                             <h5>{this.props.author}</h5>
-                            <small>2h ago</small>
+                            <small>Il y a une semaine</small>
                         </div>
                     </div>
                 </div>
