@@ -12,6 +12,11 @@
     justify-content: center;
 }
 
+.Flex-Center{
+    display:flex;
+
+}
+
 .accueil{
     position:relative;
 }

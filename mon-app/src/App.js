@@ -11,7 +11,6 @@ import Contact from "./components/Contact.js"
 import Create from "./Create.js"
 import PageTPL from "./components/PageTPL.js"
 import Accueil from "./pages/Accueil.js"
-import HP from './components/HP';
 
 
 function App() {
@@ -21,7 +20,7 @@ function App() {
       <Header/>
       <Switch>
         <Route path="/ddd">
-          <HP/>
+         
         </Route>
 
         <Route path="/contact">
