@@ -9,7 +9,7 @@ import comp from './compost.jpg';
 import bla from './blason.png';
 import manage from './manage.jpg';
 import logoS from './logoscene.png';
-
+import YoutubeEmbed from "../components/video";
 
 
 export default class Accueil extends React.Component{
@@ -24,7 +24,7 @@ export default class Accueil extends React.Component{
                         <ButtonGroup buttons={["Vie quotidienne", "Nous contacter", "L'agenda"]}></ButtonGroup>
                         <ButtonGroup buttons={["Vos démarches", "Numéros utiles", "L'actualité"]}></ButtonGroup>
                     </div>
-                    <Carousel className='carrousel' autoPlay={true} infiniteLoop={true} showThumbs={false} showArrows={false}>
+                    <Carousel className='carrousel' autoPlay={true} infiniteLoop={true} showThumbs={false} showArrows={false} >
                         <div style={{height:'100%'}}>
                             <img style={{height:'100%', width:'auto'}} alt="" src="https://www.iledebrehat.fr/wp-content/uploads/2020/10/brehat.jpg" />
                         </div>
@@ -71,6 +71,11 @@ export default class Accueil extends React.Component{
 
                         </div>
                     </div>
+                </div>
+                <div className="videos">
+                    <YoutubeEmbed embedId="8lYS7yPmO5g"/>
+                    <YoutubeEmbed embedId="hiwczNf4cg8"/>
+
                 </div>
             </div>
         )

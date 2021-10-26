@@ -11,8 +11,8 @@ import Contact from "./components/Contact.js"
 import Create from "./Create.js"
 import PageTPL from "./components/PageTPL.js"
 import Accueil from "./pages/Accueil.js"
-
-
+import './components/video.js'
+import YoutubeEmbed  from './components/video.js'
 function App() {
   return (
     <Router>
