@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Accueil.css"
 import ButtonGroup from "../components/ButtonGroup.js";
 import CarouselComponent from "../components/CarouselCompo.js";
@@ -15,17 +15,20 @@ import PageTPL from "../components/PageTPL.js"
 
 
 
+
 export default class Accueil extends React.Component{
+    
     render(){
         return(
+            
 
             <div className="bodyWrapper">
                 
                 <div className="accueil">
                     
                     <div className="buttonContainer">
-                        <ButtonGroup buttons={[["Vie quotidienne", "https://youtu.be/dQw4w9WgXcQ"], ["Nous contacter", "https://youtu.be/dQw4w9WgXcQ"], ["L'agenda", "https://youtu.be/dQw4w9WgXcQ"]]}></ButtonGroup>
-                        <ButtonGroup buttons={[["Vos démarches", "https://youtu.be/dQw4w9WgXcQ"], ["Numéros utiles", "https://youtu.be/dQw4w9WgXcQ"], ["L'actualité", "https://youtu.be/dQw4w9WgXcQ"]]}></ButtonGroup>
+                        <ButtonGroup buttons={[["Vie quotidienne", "/viequotidienne"], ["Nous contacter", "/contact"], ["L'agenda", "#agenda"]]}></ButtonGroup>
+                        <ButtonGroup buttons={[["Vos démarches", "/vosdemarches"], ["Numéros utiles", "https://www.iledebrehat.fr/numero-urgence/"], ["L'actualité", "#actu"]]}></ButtonGroup>
                     </div>
                     <video className='videoTag' autoPlay loop muted>
                     <source src={sample} type='video/mp4' />
@@ -36,7 +39,7 @@ export default class Accueil extends React.Component{
                
                 <div className="dFlex fWrap jContent bColor">
                     <div className="dFlex fWrap fColumn">
-                        <span className="pageTitle">Bréhat Infos – le bulletin municipal</span>
+                        <span className="pageTitle" id="#actu">Bréhat Infos – le bulletin municipal</span>
                     </div>
                 
                 </div>

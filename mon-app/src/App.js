@@ -13,6 +13,8 @@ import PageTPL from "./components/PageTPL.js"
 import Accueil from "./pages/Accueil.js"
 import './components/video.js'
 import YoutubeEmbed  from './components/video.js'
+import NouveauTPL from "./components/nouveauTPL.js"
+
 function App() {
   return (
     <Router>
@@ -21,6 +23,21 @@ function App() {
       <Switch>
         <Route path="/contact">
           <Contact/>
+        </Route>
+        <Route path="/vosdemarches">
+        <PageTPL 
+            title="Vos démarches"
+            resume="Accédez rapidement aux infos dont vous avez besoin."
+            buttons={[["Etat civil", "etatcivil"], ["Papiers d'idientité", "id",], ["Urbanisme et PLU", "map"], ["Taxe de séjour", "sejour"], ["Paiements en ligne", "cb"], ["Elections : inscriptions", "mail"], ["Ports et mouillage", "port"], ["Tarifs communaux", "calculette"],["Parking l'Arcouest", "parking"],["Entré/sortie des véhicules", "voiture"],["Ecole - cantine -garderie", "stylo"],["Tous les services municipaux", "mairie"]]}
+          ></PageTPL>
+        </Route>
+        
+        <Route path="/viequotidienne">
+        <PageTPL 
+            title="Vie quotidienne"
+            resume="Accédez rapidement aux infos dont vous avez besoin."
+            buttons={[["Petit train", "train"], ["Barges de transport", "bateau",], ["Horaires vedettes", "bateau"], ["Mouillages", "port"], ["Poubelles", "poubelle"], ["Déchetterie", "dechets"], ["Assainessement", "goute"], ["Classement plages", "flag"],["Numéros d'urgance", "phone"],["Cabinet médical", "medical"],["EHPAD", "ehpad"],["VSL", "ambulance"],["Activités culturelles", "theatre"],["Activités sportives", "foot"],["Menus de la cantine", "cantine"],["Bréhat infos", "persoLivre"]]}
+          ></PageTPL>
         </Route>
 
         <Route path="/create">
