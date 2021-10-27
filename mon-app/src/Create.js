@@ -1,12 +1,13 @@
 import ButtonGroup from "./components/ButtonGroup.js"
+import Bouton from "./components/Btn_sty.js"
+
 import "./App.css"
 const Create = () =>{
     return(
         <div className="create">
-            <h2>Add</h2>
             <div className="contenantFlex centerFlex flewWrap">
 
-                <ButtonGroup buttons={["Button 1", "Button 2", "Button 3", "Button 4"]}></ButtonGroup>
+                <Bouton text='test' icon='voiture'></Bouton>
             </div>
         </div>
     );
