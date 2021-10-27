@@ -13,7 +13,6 @@ import PageTPL from "./components/PageTPL.js"
 import Accueil from "./pages/Accueil.js"
 import './components/video.js'
 import YoutubeEmbed  from './components/video.js'
-import NouveauTPL from "./components/nouveauTPL.js"
 
 function App() {
   return (
@@ -36,7 +35,7 @@ function App() {
         <PageTPL 
             title="Vie quotidienne"
             resume="Accédez rapidement aux infos dont vous avez besoin."
-            buttons={[["Petit train", "train"], ["Barges de transport", "bateau",], ["Horaires vedettes", "bateau"], ["Mouillages", "port"], ["Poubelles", "poubelle"], ["Déchetterie", "dechets"], ["Assainessement", "goute"], ["Classement plages", "flag"],["Numéros d'urgance", "phone"],["Cabinet médical", "medical"],["EHPAD", "ehpad"],["VSL", "ambulance"],["Activités culturelles", "theatre"],["Activités sportives", "foot"],["Menus de la cantine", "cantine"],["Bréhat infos", "persoLivre"]]}
+            buttons={[["Petit train", "train"], ["Barges de transport", "bateau",], ["Horaires vedettes", "horloge"], ["Mouillages", "port"], ["Poubelles", "poubelle"], ["Déchetterie", "dechets"], ["Assainessement", "goute"], ["Classement plages", "flag"],["Numéros d'urgance", "phone"],["Cabinet médical", "medical"],["EHPAD", "ehpad"],["VSL", "ambulance"],["Activités culturelles", "theatre"],["Activités sportives", "foot"],["Menus de la cantine", "cantine"],["Bréhat infos", "persoLivre"]]}
           ></PageTPL>
         </Route>
 

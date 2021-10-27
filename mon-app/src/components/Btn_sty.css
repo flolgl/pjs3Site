@@ -21,7 +21,7 @@
     background-color: #fff;
     border: 0px;
     border-top: 10px;
-    border-color: #c8092f;
+    border-color: #6d696a;
     border-style: solid;
     box-shadow: 0px 0px 10px 4px rgb(0 0 0 / 0.2);
     height: 100%;
@@ -48,7 +48,7 @@
   }
 .body:hover {
     transition: all 0.1s linear;
-    background-color: #c8092f;
+    background-color: #6d696a;
   }
 .body:hover .text {
     transition: all 0.1s linear;
@@ -59,7 +59,7 @@
     color: #fff !important;
   }
   .svg_{
-    
+    color : #6d696a !important;
     height: 40px;
     width: 40px;
   }
