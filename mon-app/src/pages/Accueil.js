@@ -77,7 +77,7 @@ export default class Accueil extends React.Component{
                 </div>
                 <PageTPL 
                     title="Tourisme à brehat"
-                    resume=""
+                    resume="Liens pratiques"
                     buttons={[["Office de Tourisme", "i"], ["Camping municipal", "camping"], ["Horaires vedettes", "bateau"], ["Ports et mouillages", "port"], ["Numéros utiles", "phone"], ["Activités culturelles", "thatre"], ["Activités sportives", "foot"], ["Patrimoine", "eglise"], ["Histoire", "livre"]]}
                 ></PageTPL>
 

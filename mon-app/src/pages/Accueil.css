@@ -32,7 +32,7 @@
 }
 .accueil{
     position:relative;
-    height: 50% ;
+    height: 50%  !important;
     background-color: #6d696a;
 }
 .carrousel{
