@@ -4,9 +4,9 @@ import Bouton from "./Btn_sty.js"
 
 class PageContent extends React.Component{
 
-    renderButton(text, icon){
+    renderButton(text, icon, href){
         return (
-            <Bouton text={text} icon={icon}></Bouton>
+            <Bouton text={text} icon={icon} href={href}></Bouton>
         )
     }
 
@@ -32,7 +32,7 @@ class PageContent extends React.Component{
                 <div className="contentContainer dFlex jContent fWrap">
                     <div className="resumeContainer dFlex jContent fWrap">
                         {this.props.buttons.forEach((value, index) => 
-                            items.push(this.renderButton(value[0], value[1]))
+                            items.push(this.renderButton(value[0], value[1], value[2]))
                         )}
 
                         {items}

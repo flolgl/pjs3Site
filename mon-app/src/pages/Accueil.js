@@ -24,8 +24,8 @@ export default class Accueil extends React.Component{
                 <div className="accueil">
                     
                     <div className="buttonContainer">
-                        <ButtonGroup buttons={["Vie quotidienne", "Nous contacter", "L'agenda"]}></ButtonGroup>
-                        <ButtonGroup buttons={["Vos démarches", "Numéros utiles", "L'actualité"]}></ButtonGroup>
+                        <ButtonGroup buttons={[["Vie quotidienne", "https://youtu.be/dQw4w9WgXcQ"], ["Nous contacter", "https://youtu.be/dQw4w9WgXcQ"], ["L'agenda", "https://youtu.be/dQw4w9WgXcQ"]]}></ButtonGroup>
+                        <ButtonGroup buttons={[["Vos démarches", "https://youtu.be/dQw4w9WgXcQ"], ["Numéros utiles", "https://youtu.be/dQw4w9WgXcQ"], ["L'actualité", "https://youtu.be/dQw4w9WgXcQ"]]}></ButtonGroup>
                     </div>
                     <video className='videoTag' autoPlay loop muted>
                     <source src={sample} type='video/mp4' />

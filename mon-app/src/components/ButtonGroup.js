@@ -5,9 +5,9 @@ import "./ButtonGroup.css"
 
 export default class ButtonGroup extends React.Component{
 
-    renderButton(text){
+    renderButton(text, href){
         return (
-            <Button text={text}></Button>
+            <Button text={text} href={href}></Button>
         )
     }
 
@@ -18,8 +18,8 @@ export default class ButtonGroup extends React.Component{
                 
             <div className="contenantFlex verticalButtonGroup">
                 {this.props.buttons.forEach((value, index) => {
-                    //console.log(value);
-                    items.push(this.renderButton(value));
+                    console.log(value);
+                    items.push(this.renderButton(value[0], value[1]));
                 })}
 
                 {items}

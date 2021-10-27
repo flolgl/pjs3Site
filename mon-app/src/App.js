@@ -30,14 +30,14 @@ function App() {
           <PageTPL 
             title="Municipalité"
             resume="Tout savoir sur la vie de l’administration bréhatine : les élus, la mairie, les projets, les commissions, le budget sans oublier les formalités administratives.."
-          buttons={[["L'équipe municipale", "equipe"], ["La mairie", "mairie"], ["Les commissions", "docs"], ["Conseil municipaix", "cerveaux"], ["Tarif communaux", "stylo"], ["Jumelage itterswiller", "handshake"], ["conseil municipal des jeunes", "stickman"], ["Budget et fiscalité", "euros"]]}
+            buttons={[["L'équipe municipale", "equipe", "https://youtu.be/dQw4w9WgXcQ"], ["La mairie", "mairie", , "https://youtu.be/dQw4w9WgXcQ"], ["Les commissions", "docs", "https://youtu.be/dQw4w9WgXcQ"], ["Conseil municipaix", "cerveaux", "https://youtu.be/dQw4w9WgXcQ"], ["Tarif communaux", "stylo", "https://youtu.be/dQw4w9WgXcQ"], ["Jumelage itterswiller", "handshake", "https://youtu.be/dQw4w9WgXcQ"], ["conseil municipal des jeunes", "stickman", "https://youtu.be/dQw4w9WgXcQ"], ["Budget et fiscalité", "euros", "https://youtu.be/dQw4w9WgXcQ"]]}
           ></PageTPL>
         </Route>
         <Route path="/serMunicipaux">
           <PageTPL 
             title="Services municipaux"
             resume="Tous les services municipaux."
-          buttons={[["Formalités administratives", "docs"], ["Gestion des poubelles", "poubelle"], ["Services techniques", "engrenage"], ["Services de santé", "croix"], ["Ecole-cantine-garderie", "stylo"], ["Pompier", "ext"], ["Brehat infos", "lire"], ["Enquêtes publiques", "loupe"], ["Port et mouillages", "port"], ["Location de salle", "camping"],["Assainissement et gestion de l’eau","goute"]]}
+            buttons={[["Formalités administratives", "docs"], ["Gestion des poubelles", "poubelle"], ["Services techniques", "engrenage"], ["Services de santé", "croix"], ["Ecole-cantine-garderie", "stylo"], ["Pompier", "ext"], ["Brehat infos", "lire"], ["Enquêtes publiques", "loupe"], ["Port et mouillages", "port"], ["Location de salle", "camping"],["Assainissement et gestion de l’eau","goute"]]}
           ></PageTPL>
         </Route>
         <Route path="/activities">
