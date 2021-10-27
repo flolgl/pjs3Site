@@ -59,6 +59,7 @@
 
 .cFlex{
     margin-top: 2rem;
+    margin-bottom: 2rem;
     display: flex;
     justify-content: center;
 }
