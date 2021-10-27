@@ -56,6 +56,8 @@
 
 .paysage{
     background-image:url("https://www.iledebrehat.fr/wp-content/uploads/2021/01/mairie-1-2.jpg");
+    background-position-y: -4cm;
+    background-repeat: no-repeat;
     min-height: 430px;
 }
 

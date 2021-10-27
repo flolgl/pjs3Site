@@ -11,6 +11,8 @@ import manage from './manage.jpg';
 import logoS from './logoscene.png';
 import YoutubeEmbed from "../components/video";
 import sample from './drone.mp4';
+import PageTPL from "../components/PageTPL.js"
+
 
 
 export default class Accueil extends React.Component{
@@ -30,9 +32,15 @@ export default class Accueil extends React.Component{
                 </video>
                 </div>
 
-                <div className="ButtonsAbonnement"></div>
-                <div className="municipalBulWrapper">
-                    <h3>Bréhat Infos – le bulletin municipal</h3>
+
+               
+                <div className="dFlex fWrap jContent bColor">
+                    <div className="dFlex fWrap fColumn">
+                        <span className="pageTitle">Bréhat Infos – le bulletin municipal</span>
+                    </div>
+                
+                </div>
+                    
                     <div className="cFlex-Center">
                        
                         <div className="cFlex">
@@ -62,14 +70,35 @@ export default class Accueil extends React.Component{
                         ></Card>
 
                         </div>
-                    </div>
+                    
                 </div>
-                <div className="videos">
-                    <YoutubeEmbed embedId="8lYS7yPmO5g"/>
-                    <YoutubeEmbed embedId="hiwczNf4cg8"/>
+                <PageTPL 
+                    title="Tourisme à brehat"
+                    resume=""
+                    buttons={[["Office de Tourisme", "i"], ["Camping municipal", "camping"], ["Horaires vedettes", "bateau"], ["Ports et mouillages", "port"], ["Numéros utiles", "phone"], ["Activités culturelles", "thatre"], ["Activités sportives", "foot"], ["Patrimoine", "eglise"], ["Histoire", "livre"]]}
+                ></PageTPL>
 
+                <div className="dFlex fWrap jContent bColor">
+                    <div className="dFlex fWrap fColumn">
+                        <span className="pageTitle">Dernières vidéos ! </span>
+                    </div>
+                
                 </div>
-            </div>
+                    
+                
+                <div className='CVideos'>
+                    <Carousel className='carrousel' autoPlay={true} infiniteLoop={true} showThumbs={false} showArrows={true}>
+                        <div>
+                            <YoutubeEmbed embedId="8lYS7yPmO5g"/>
+                        </div>
+                        <div>
+                            <YoutubeEmbed embedId="hiwczNf4cg8"/>
+                        </div>
+                    </Carousel>
+                </div>
+        </div>
+           
+           
         )
     }
 }

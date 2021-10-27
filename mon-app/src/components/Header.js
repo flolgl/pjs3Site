@@ -10,7 +10,7 @@ export default class Header extends React.Component{
             
         <Navbar bg="light" expand="lg">
             <Container>
-                <Navbar.Brand href="#home"><img src={logo} alt="Île-de-Bréhat"/></Navbar.Brand>
+                <Navbar.Brand href="/"><img src={logo} alt="Île-de-Bréhat"/></Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav" className="navBarLinksContainer">
                     <Nav className="">
@@ -19,7 +19,7 @@ export default class Header extends React.Component{
                         <Nav.Link href="/serMunicipaux">Services municipaux</Nav.Link>
                         <Nav.Link href="/activities">Activités et Découverte</Nav.Link>
                         <Nav.Link href="/contact">Contact</Nav.Link>
-                        <Nav.Link href="#facebook">Facebook</Nav.Link>
+                        <Nav.Link href="https://www.facebook.com/Mairie-de-lile-de-Br%C3%A9hat-109476447520454/">Facebook</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

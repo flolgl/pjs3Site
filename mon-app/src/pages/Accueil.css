@@ -1,4 +1,5 @@
 
+
 .AccueilWrapper{
     background-image: url("https://www.iledebrehat.fr/wp-content/uploads/2020/10/brehat.jpg");
     height: 61rem;
@@ -11,7 +12,17 @@
     align-items:flex-end;
     justify-content: center;
 }
-
+.CVideos{
+    background-color: #6d696a;
+    padding-bottom: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.carrousel{
+    width: 80% !important;
+    height: 100% !important;
+}
 .Flex-Center{
     display:flex;
 
@@ -48,6 +59,7 @@
 .cFlex{
     margin-top: 2rem;
     display: flex;
+    justify-content: center;
 }
 
 .videos{

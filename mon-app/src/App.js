@@ -19,9 +19,6 @@ function App() {
       <div className="App">
       <Header/>
       <Switch>
-        <Route path="/ddd">
-        </Route>
-
         <Route path="/contact">
           <Contact/>
         </Route>
