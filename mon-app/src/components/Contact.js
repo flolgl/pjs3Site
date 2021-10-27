@@ -11,10 +11,10 @@ export default class Contact extends React.Component{
                                 <div class="row no-gutters mb-5">
                                     <div class="col-md-7">
                                         <div class="contact-wrap w-100 p-md-5 p-4">
-                                            <h3 class="mb-4">Contact us</h3>
+                                            <h3 class="mb-4">Contactez-nous</h3>
                                             <div id="form-message-warning" class="mb-4"></div>
                                             <div id="form-message-success" class="mb-4">
-                                                Your message was sent, thank you!
+                                                Votre message a été envoyé, merci !
                                             </div>
                                             <form method="POST" id="contactForm" name="contactForm" class="contactForm">
                                                 <div class="row">
@@ -65,7 +65,7 @@ export default class Contact extends React.Component{
                                                 <span class="fa fa-map-marker"></span>
                                             </div>
                                             <div class="text">
-                                                <p><span>Address:</span> 198 West 21th Street, Suite 721 New York NY 10016</p>
+                                                <p><span>Adresse:</span> 143 Av. de Versailles, 75016 Paris</p>
                                             </div>
                                         </div>
                                     </div>
@@ -75,7 +75,7 @@ export default class Contact extends React.Component{
                                                 <span class="fa fa-phone"></span>
                                             </div>
                                             <div class="text">
-                                                <p><span>Phone:</span> <a href="tel://1234567920">+ 1235 2355 98</a></p>
+                                                <p><span>Téléphone:</span> <a href="tel://1234567920">01 76 53 47 00</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -85,7 +85,7 @@ export default class Contact extends React.Component{
                                                 <span class="fa fa-paper-plane"></span>
                                             </div>
                                             <div class="text">
-                                                <p><span>Email:</span> <a href="mailto:info@yoursite.com">info@yoursite.com</a></p>
+                                                <p><span>Mail:</span> <a href="mailto:#">info@yoursite.com</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -95,7 +95,7 @@ export default class Contact extends React.Component{
                                                 <span class="fa fa-globe"></span>
                                             </div>
                                             <div class="text">
-                                                <p><span>Website</span> <a href="#">yoursite.com</a></p>
+                                                <p><span>Site</span> <a href="https://www.iledebrehat.fr/" target="_blank" >iledebrehat.com</a></p>
                                             </div>
                                         </div>
                                     </div>
