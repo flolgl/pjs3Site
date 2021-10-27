@@ -10,6 +10,7 @@ import bla from './blason.png';
 import manage from './manage.jpg';
 import logoS from './logoscene.png';
 import YoutubeEmbed from "../components/video";
+import sample from './drone.mp4';
 
 
 export default class Accueil extends React.Component{
@@ -17,25 +18,16 @@ export default class Accueil extends React.Component{
         return(
 
             <div className="bodyWrapper">
-
+                
                 <div className="accueil">
                     
                     <div className="buttonContainer">
                         <ButtonGroup buttons={["Vie quotidienne", "Nous contacter", "L'agenda"]}></ButtonGroup>
                         <ButtonGroup buttons={["Vos démarches", "Numéros utiles", "L'actualité"]}></ButtonGroup>
                     </div>
-                    <Carousel className='carrousel' autoPlay={true} infiniteLoop={true} showThumbs={false} showArrows={false} >
-                        <div style={{height:'100%'}}>
-                            <img style={{height:'100%', width:'auto'}} alt="" src="https://www.iledebrehat.fr/wp-content/uploads/2020/10/brehat.jpg" />
-                        </div>
-                        <div style={{height:'100%'}}>
-                            <img style={{height:'100%', width:'auto'}} alt="" src="https://www.iles-du-ponant.com/wp-content/uploads/brehat/brehat-YLG-14-2014-58-2000x850.jpg" />
-                        </div>
-                        <div style={{height:'100%'}}>
-                            <img style={{height:'100%', width:'auto'}} alt="" src="https://www.cotesdarmor.com/uploads/2020/10/Brehat_2020-06_ile-du-guerzido_oeil-de-paco.jpg" />
-                        </div>
-                    </Carousel>
-
+                    <video className='videoTag' autoPlay loop muted>
+                    <source src={sample} type='video/mp4' />
+                </video>
                 </div>
 
                 <div className="ButtonsAbonnement"></div>

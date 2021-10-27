@@ -16,7 +16,9 @@
     display:flex;
 
 }
-
+.videoTag{
+    width: 100%;
+}
 .accueil{
     position:relative;
     height: 50% ;
@@ -27,7 +29,7 @@
 }
 .buttonContainer{
     position :absolute;
-    top: 25%;  /* position the top  edge of the element at the middle of the parent */
+    top: 62%;  /* position the top  edge of the element at the middle of the parent */
     left: 50%; /* position the left edge of the element at the middle of the parent */
 
     transform: translate(-50%, -50%); 
