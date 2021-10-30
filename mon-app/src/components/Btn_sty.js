@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import { Button } from "react-bootstrap";
+import React from "react";
 import "./Btn_sty.css";
 
 export default class Btn_sty extends React.Component {

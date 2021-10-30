@@ -1,17 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
 import Header from './components/Header';
-import ButtonGroup from "./components/ButtonGroup.js"
-import Card from "./components/Card.js"
+
 import Footer from "./components/Footer.js"
-import Btn_sty from "./components/Btn_sty"
-import CarouselComponent from "./components/CarouselCompo.js"
+
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom"
 import Contact from "./pages/Contact.js"
 import PageTPL from "./components/PageTPL.js"
 import Accueil from "./pages/Accueil.js"
 import './components/video.js'
-import YoutubeEmbed  from './components/video.js'
 
 function App() {
   return (
@@ -42,7 +38,7 @@ function App() {
           <PageTPL 
             title="Municipalité"
             resume="Tout savoir sur la vie de l’administration bréhatine : les élus, la mairie, les projets, les commissions, le budget sans oublier les formalités administratives.."
-            buttons={[["L'équipe municipale", "equipe", "https://youtu.be/dQw4w9WgXcQ"], ["La mairie", "mairie", , "https://youtu.be/dQw4w9WgXcQ"], ["Les commissions", "docs", "https://youtu.be/dQw4w9WgXcQ"], ["Conseil municipaix", "cerveaux", "https://youtu.be/dQw4w9WgXcQ"], ["Tarif communaux", "stylo", "https://youtu.be/dQw4w9WgXcQ"], ["Jumelage itterswiller", "handshake", "https://youtu.be/dQw4w9WgXcQ"], ["conseil municipal des jeunes", "stickman", "https://youtu.be/dQw4w9WgXcQ"], ["Budget et fiscalité", "euros", "https://youtu.be/dQw4w9WgXcQ"]]}
+            buttons={[["L'équipe municipale", "equipe", "https://youtu.be/dQw4w9WgXcQ"], ["La mairie", "mairie", "https://youtu.be/dQw4w9WgXcQ"], ["Les commissions", "docs", "https://youtu.be/dQw4w9WgXcQ"], ["Conseil municipaix", "cerveaux", "https://youtu.be/dQw4w9WgXcQ"], ["Tarif communaux", "stylo", "https://youtu.be/dQw4w9WgXcQ"], ["Jumelage itterswiller", "handshake", "https://youtu.be/dQw4w9WgXcQ"], ["conseil municipal des jeunes", "stickman", "https://youtu.be/dQw4w9WgXcQ"], ["Budget et fiscalité", "euros", "https://youtu.be/dQw4w9WgXcQ"]]}
           ></PageTPL>
         </Route>
         <Route path="/serMunicipaux">

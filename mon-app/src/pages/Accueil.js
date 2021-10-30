@@ -1,7 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Accueil.css"
 import ButtonGroup from "../components/ButtonGroup.js";
-import CarouselComponent from "../components/CarouselCompo.js";
 import Card from "../components/Card.js"
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
