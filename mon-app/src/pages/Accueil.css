@@ -41,16 +41,13 @@
 }
 .buttonContainer{
     position :absolute;
-    top: 62%;  /* position the top  edge of the element at the middle of the parent */
+    top: 50%;  /* position the top  edge of the element at the middle of the parent */
     left: 50%; /* position the left edge of the element at the middle of the parent */
 
     transform: translate(-50%, -50%); 
-    z-index: 1;
     display: flex;
     justify-content: center;
-    /*height: 100px;*/
-    margin-bottom: 100px;
-    margin-top: 100px;
+
 }
 
 .municipalBulWrapper{
@@ -58,12 +55,27 @@
 }
 
 .cFlex{
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin:2rem;
     display: flex;
     justify-content: center;
+    gap:15px;
+    flex-wrap: wrap;
 }
 
 .videos{
     display: flex;
+}
+
+.videoAndButtonsContainer{
+    position:relative;
+}
+
+@media (max-width:520px){
+    .custom-btn{
+        width: 115px;
+        height: 41px;
+        font-size: 10px;
+        margin: 2px;   
+
+    }
 }
