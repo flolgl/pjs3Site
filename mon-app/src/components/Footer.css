@@ -59,6 +59,9 @@
     background-position-y: -4cm;
     background-repeat: no-repeat;
     min-height: 430px;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
 }
 
 .containerBottom{

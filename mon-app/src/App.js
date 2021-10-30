@@ -7,8 +7,7 @@ import Footer from "./components/Footer.js"
 import Btn_sty from "./components/Btn_sty"
 import CarouselComponent from "./components/CarouselCompo.js"
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom"
-import Contact from "./components/Contact.js"
-import Create from "./Create.js"
+import Contact from "./pages/Contact.js"
 import PageTPL from "./components/PageTPL.js"
 import Accueil from "./pages/Accueil.js"
 import './components/video.js'
@@ -39,9 +38,6 @@ function App() {
           ></PageTPL>
         </Route>
 
-        <Route path="/create">
-          <Create/>
-        </Route>
         <Route path="/municipalite">
           <PageTPL 
             title="Municipalité"
@@ -66,6 +62,7 @@ function App() {
         <Route path="/">
           <Accueil/>
         </Route>
+
       </Switch>
       <Footer/>
 

@@ -71,7 +71,8 @@
 }
 
 @media (max-width:520px){
-    .custom-btn{
+    
+    .videoAndButtonsContainer div.buttonContainer div.contenantFlex.verticalButtonGroup a button.custom-btn{
         width: 115px;
         height: 41px;
         font-size: 10px;
