@@ -25,16 +25,16 @@ export default class Accueil extends React.Component{
                 
                 <div className="accueil">
                     
-
+                
                     <div className="videoAndButtonsContainer">
+                    
+                        <video className='videoTag' autoPlay loop muted>
+                            <source src={sample} type='video/mp4' />
+                        </video>
                         <div className="buttonContainer">
                             <ButtonGroup buttons={[["Vie quotidienne", "/viequotidienne"], ["Nous contacter", "/contact"], ["L'agenda", "#agenda"]]}></ButtonGroup>
                             <ButtonGroup buttons={[["Vos démarches", "/vosdemarches"], ["Numéros utiles", "https://www.iledebrehat.fr/numero-urgence/"], ["L'actualité", "#actu"]]}></ButtonGroup>
                         </div>
-                        <video className='videoTag' autoPlay loop muted>
-                            <source src={sample} type='video/mp4' />
-                        </video>
-
                     </div>
                 </div>
 
