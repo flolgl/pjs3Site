@@ -52,6 +52,33 @@
 
 .municipalBulWrapper{
     margin-top: 5rem;
+}:root {
+    --default: #6d696a;
+
+  }
+/*CUSTOM*/
+.wrap .body{
+    border-color:var(--default) !important;
+}
+.wrap .body .img .svg_{
+    color:var(--default) !important;
+}
+.wrap .body:hover{
+    background-color:var(--default) !important;
+}
+.dFlex.fWrap.jContent.bColor{
+    background-color:var(--default) !important;
+}
+.videoAndButtonsContainer{
+    background-color:var(--default)  !important;
+}
+
+/*CUSTOM*/
+
+
+
+.wrap .body:hover .svg_{
+    color:white !important;
 }
 
 .cFlex{
